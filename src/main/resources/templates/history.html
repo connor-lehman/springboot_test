@@ -15,6 +15,7 @@
 <body>
     <div class="layer1">
         <p class="tab">
+        <button onclick="sort()">Sort</button>
         <th:block th:if="${history}">
             <th:block th:each="str, stat : ${history.split('\r\n|\r|\n', -1)}">
                 <th:block th:text="${str}"/>
@@ -25,3 +26,9 @@
     </div>
 </body>
 </html>
+
+<script>
+function sort() {
+    
+}
+</script>
